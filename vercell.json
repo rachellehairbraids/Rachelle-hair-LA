@@ -1,4 +1,6 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/:path+",
@@ -6,11 +8,10 @@
       "permanent": true
     }
   ],
-  "routes": [
-    { "handle": "filesystem" },
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
