@@ -5,5 +5,12 @@
       "destination": "https://la.rachellesbraidery.com/",
       "permanent": true
     }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
   ]
 }
